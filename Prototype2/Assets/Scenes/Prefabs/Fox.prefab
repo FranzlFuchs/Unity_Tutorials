@@ -921,6 +921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ab6d34e7f3eea4f82ff184e237a45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: 0
 --- !u!65 &2518557966888432242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -946,6 +947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2597e6ad49e710a498da2a0e04c89a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreObserver: {fileID: 0}
+  pointsOnDeath: 10
 --- !u!1 &667044505606622439
 GameObject:
   m_ObjectHideFlags: 0

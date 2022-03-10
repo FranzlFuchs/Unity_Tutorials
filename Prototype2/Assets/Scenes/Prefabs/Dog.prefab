@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac9c74bda9b4aa4bb9b4c19ae89b911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
 --- !u!114 &2106959801971050219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2102,6 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ab6d34e7f3eea4f82ff184e237a45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: 0
 --- !u!65 &-8587767450666919119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2127,6 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2597e6ad49e710a498da2a0e04c89a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsOnDeath: 15
 --- !u!1 &8947185943070157304
 GameObject:
   m_ObjectHideFlags: 0

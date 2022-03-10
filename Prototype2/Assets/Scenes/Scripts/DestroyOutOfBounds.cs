@@ -8,6 +8,9 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     private float topBound = 30;
     private float lowerBound = -10;
+    private float rightBound = 40;
+
+    public bool projectile;
 
     void Start()
     {
@@ -21,9 +24,12 @@ public class DestroyOutOfBounds : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        else if (transform.position.z < lowerBound)
+        else if (transform.position.z < lowerBound || transform.position.x > rightBound)
         {
-            Debug.Log("Game Over");
+            if (!projectile)
+            {
+                Debug.Log("Game Over");
+            }
             Destroy(this.gameObject);
         }
 
