@@ -717,7 +717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7427c0531ecf2c449049f296b02a6d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 500
+  jumpForce: 600
   gravityModifier: 3
   gameOver: 0
   explosion: {fileID: 1684703925}
