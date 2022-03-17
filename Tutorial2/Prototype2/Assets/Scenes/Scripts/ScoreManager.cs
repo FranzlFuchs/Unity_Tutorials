@@ -9,7 +9,7 @@ public class ScoreManager : MonoBehaviour
 
     public static ScoreManager Instance = new ScoreManager();
     private int ScorePoints;
-    public TMP_Text ScoreText;
+    //public Text ScoreText;
     private ScoreManager()
     {
 
