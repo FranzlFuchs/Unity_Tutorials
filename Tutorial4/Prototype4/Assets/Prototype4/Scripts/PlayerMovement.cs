@@ -9,8 +9,11 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody playerRb;
     public GameObject focalPoint;
     public GameObject powerUpIndicator;
-    public float forwSpeed;
+    public float forwSpeed = 100;
     public float powerUpStrength = 20.0f;
+    public float powerUpboost = 5.0f;
+
+    private float growthFactor = 1.1f;
 
 
     public bool hasPowerUp;
@@ -28,7 +31,13 @@ public class PlayerMovement : MonoBehaviour
     {
         float forwInput = Input.GetAxis("Vertical");
         playerRb.AddForce(focalPoint.transform.forward * forwSpeed * forwInput);
-        powerUpIndicator.transform.position = transform.position + new Vector3(0, -0.5f,0);
+        powerUpIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
+
+
+        if (transform.position.y < -5)
+        {
+            Debug.Log("GAME OVER");
+        }
 
     }
 
@@ -42,6 +51,14 @@ public class PlayerMovement : MonoBehaviour
             powerUpIndicator.gameObject.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(PowerUpCountdownRoutine(powerUpCooldown));
+        }
+
+        if (other.CompareTag("PowerUpGreen"))
+        {
+            transform.localScale = transform.localScale * growthFactor;
+            powerUpStrength += powerUpboost;
+            Destroy(other.gameObject);
+
         }
 
     }

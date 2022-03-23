@@ -349,6 +349,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2615643064559898867, guid: bc3dad648584a59448d876c82eadcde1, type: 3}
   powerUpPrefab: {fileID: 1598462249829518363, guid: 04aaf3039ba8fa64cbda9c736cb52afd, type: 3}
+  stealerPrefab: {fileID: 8784156596751003449, guid: 715b5c137dd518e4ea997bba22006a65, type: 3}
+  powerUpGreenPrefab: {fileID: 8036391214699019824, guid: accdaa87d8c04254c8782003ed57ab6a, type: 3}
   enemieCount: 0
 --- !u!4 &611143278
 Transform:
@@ -433,7 +435,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f5f7210d167cd641a6f33378d59c415, type: 2}
+  - {fileID: 2100000, guid: 4c97b24d72ebade4d98acaf3b75c90ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -494,6 +496,7 @@ MonoBehaviour:
   powerUpIndicator: {fileID: 1083081632}
   forwSpeed: 30
   powerUpStrength: 80
+  powerUpboost: 5
   hasPowerUp: 0
 --- !u!1 &1083081632 stripped
 GameObject:
