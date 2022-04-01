@@ -9,12 +9,14 @@ public class GameManagerX : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
+    
     public GameObject titleScreen;
     public Button restartButton; 
 
     public List<GameObject> targetPrefabs;
 
     private int score;
+
     private float spawnRate = 1.5f;
     public bool isGameActive;
 
@@ -26,6 +28,7 @@ public class GameManagerX : MonoBehaviour
     public void StartGame(int difficulty)
     {
         spawnRate /= difficulty;
+        
         isGameActive = true;
         StartCoroutine(SpawnTarget());
         score = 0;
@@ -72,6 +75,7 @@ public class GameManagerX : MonoBehaviour
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
     }
+    
 
     // Stop game, bring up game over text and restart button
     public void GameOver()

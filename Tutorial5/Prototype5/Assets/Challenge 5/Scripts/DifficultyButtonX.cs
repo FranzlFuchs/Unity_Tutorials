@@ -8,6 +8,7 @@ public class DifficultyButtonX : MonoBehaviour
     private Button button;
     private GameManagerX gameManagerX;
     public int difficulty;
+ 
 
     // Start is called before the first frame update
     void Start()

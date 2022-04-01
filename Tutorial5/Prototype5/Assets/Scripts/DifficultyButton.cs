@@ -11,6 +11,7 @@ public class DifficultyButton : MonoBehaviour
     private GameManager gameManager;
 
     public int difficulty; 
+    public int lives; 
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class DifficultyButton : MonoBehaviour
 
     void SetDifficulty(){
         Debug.Log(diffButton.gameObject.name + "was clicked");
-        gameManager.StartGame(difficulty);
+        gameManager.StartGame(difficulty, lives);
 
     }
 }

@@ -42,7 +42,7 @@ public class Target : MonoBehaviour
         Destroy(gameObject);
         if (!CompareTag("Bad"))
         {
-            gameManager.GameOver();
+            gameManager.LiveLost();
         }
     }
 
@@ -53,6 +53,7 @@ public class Target : MonoBehaviour
 
             Destroy(gameObject);
             gameManager.UpdateScore(pointsTarget);
+          
             Instantiate(explosion, transform.position, transform.rotation);
         }
     }
