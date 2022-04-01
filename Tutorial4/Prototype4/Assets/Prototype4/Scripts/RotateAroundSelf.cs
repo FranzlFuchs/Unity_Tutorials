@@ -7,7 +7,7 @@ public class RotateAroundSelf : MonoBehaviour
     // Start is called before the first frame update
 
 
-    private float rotSpeed = 500;
+    private float rotSpeed = 300;
     void Start()
     {
         

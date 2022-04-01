@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float powerUpStrength = 20.0f;
     public float powerUpboost = 5.0f;
 
-    private float growthFactor = 1.1f;
+    private float growthFactor = 1.2f;
 
 
     public bool hasPowerUp;

@@ -48,6 +48,7 @@ public class SpawnManager : MonoBehaviour
         {
             Instantiate(enemyPrefab, GenerateSpawnPoint(), enemyPrefab.transform.rotation);
         }
+        
         Instantiate(powerUpPrefab, GenerateSpawnPoint(), powerUpPrefab.transform.rotation);
 
         int rand = Random.Range(0, 2);
